@@ -17,6 +17,7 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 
 keymap("n", "<C-u>", "<C-u>zz", opts)
 keymap("n", "<C-d>", "<C-d>zz", opts)
+
 keymap("n", "n", "nzz", opts)
 
 keymap("n", "<S-l>", ":bnext<CR>", opts)
@@ -107,6 +108,9 @@ nnoremap("<leader>bb", function()
 		previewer = false,
 	}))
 end)
+
+
+nnoremap("<C-g><C-g>", ":vs<CR>gd")
 
 nnoremap("<leader>hh", function()
 	tb.help_tags(themes.get_dropdown({

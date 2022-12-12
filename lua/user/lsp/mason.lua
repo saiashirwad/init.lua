@@ -10,6 +10,8 @@ local servers = {
 	"svelte",
 	"tailwindcss",
 	"eslint",
+	"ocamllsp",
+  "astro"
 }
 
 local settings = {

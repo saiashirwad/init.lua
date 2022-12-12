@@ -53,10 +53,12 @@ return packer.startup(function(use)
 	-- 		end, {})
 	-- 	end,
 	-- })
+	use 'shaunsingh/nord.nvim'
 	use({
 		"folke/todo-comments.nvim",
 		requires = "nvim-lua/plenary.nvim",
 	})
+  use("neanias/everforest-nvim")
 	use({
 		"folke/noice.nvim",
 		requires = {
@@ -68,7 +70,8 @@ return packer.startup(function(use)
 			"rcarriga/nvim-notify",
 		},
 	})
-	use("morhetz/gruvbox")
+  use { "ellisonleao/gruvbox.nvim" }
+	-- use("morhetz/gruvbox")
 	use("windwp/windline.nvim")
 	use("theniceboy/nvim-deus")
 	use("simrat39/rust-tools.nvim")
@@ -93,6 +96,7 @@ return packer.startup(function(use)
 		run = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
 	})
 	use({ "phaazon/hop.nvim", branch = "v2" })
+	use({'mg979/vim-visual-multi', {branch = 'master'}})
 	use({ "kylechui/nvim-surround", tag = "*" })
 	use("gelguy/wilder.nvim")
 	use({ "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" })
@@ -143,6 +147,20 @@ return packer.startup(function(use)
 	use({ "mfussenegger/nvim-dap" })
 	use({ "rcarriga/nvim-dap-ui" })
 	use({ "ravenxrz/DAPInstall.nvim" })
+  use 'Mofiqul/dracula.nvim'
+	use "lunarvim/templeos.nvim"
+	use 'altercation/vim-colors-solarized'
+	use 'overcache/NeoSolarized'
+	use { "catppuccin/nvim", as = "catppuccin" }
+	use "ggandor/lightspeed.nvim"
+	use "tanvirtin/monokai.nvim"
+	use	"RRethy/nvim-base16"
+	use 'marko-cerovac/material.nvim'
+	--#region
+	--
+	--overcache/NeoSolarized
+	--
+  --packages
 	-- use("haringsrob/nvim_context_vt")
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()

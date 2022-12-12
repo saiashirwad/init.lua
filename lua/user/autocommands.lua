@@ -66,3 +66,12 @@ vim.api.nvim_create_autocmd({ "BufWinEnter" }, {
 	end,
 })
 
+
+-- vim.cmd [[
+--   autocmd InsertEnter * :set norelativenumber
+-- ]]
+--
+--
+-- vim.cmd [[
+--   autocmd InsertLeave * :set relativenumber
+-- ]]

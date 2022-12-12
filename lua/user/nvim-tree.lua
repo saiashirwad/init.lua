@@ -11,9 +11,9 @@ end
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
 nvim_tree.setup({
-	-- sync_root_with_cwd = true,
+	sync_root_with_cwd = false,
 	update_focused_file = {
-		enable = true,
+		enable = false,
 		-- update_cwd = true,
 	},
 	renderer = {
@@ -55,7 +55,7 @@ nvim_tree.setup({
 		},
 	},
 	view = {
-		width = 30,
+		width = 40,
 		side = "right",
 		mappings = {
 			list = {

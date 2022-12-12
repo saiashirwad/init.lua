@@ -10,7 +10,6 @@ npairs.setup({
 	ts_config = {
 		lua = { "string", "source" },
 		javascript = { "string", "template_string" },
-		java = false,
 	},
 
 	fast_wrap = {

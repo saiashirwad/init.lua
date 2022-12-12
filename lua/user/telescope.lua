@@ -14,15 +14,12 @@ M.search_vimrc = function()
 		prompt_title = "VIMVIMVIM",
 		cwd = "~/.config/nvim/",
 		previewer = false,
-		winblend = 10,
 	}))
 end
 
 M.find_files = function()
-	tb.find_files(themes.get_dropdown({
+	tb.find_files(({
 		prompt_title = "where dat darned file at?",
-		previewer = false,
-		winblend = 15,
 	}))
 end
 
@@ -95,4 +92,5 @@ telescope.setup({
 
 telescope.load_extension("fzf")
 telescope.load_extension("ui-select")
+
 return M

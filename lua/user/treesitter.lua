@@ -17,14 +17,13 @@ configs.setup({
 		keymaps = {
 			init_selection = "<CR>",
 			node_incremental = "<CR>",
-			-- TODO: I'm not sure for this one.
 			scope_incremental = "<TAB>",
-			node_decremental = "<S-TAB>",
+			node_decremental = "<C-CR>",
 		},
 	},
 	highlight = {
 		enable = true, -- false will disable the whole extension
-		disable = { "css" }, -- list of language that will be disabled
+		-- disable = { "css", "typescript", "typescriptreact", "tsx", "lua"}, -- list of language that will be disabled
 	},
 	autopairs = {
 		enable = true,
@@ -33,8 +32,9 @@ configs.setup({
 		enable = true,
 	},
 	indent = { enable = true, disable = { "python", "css", "rust" } },
-	-- context_commentstring = {
-	-- 	enable = true,
-	-- 	enable_autocmd = false,
-	-- },
+	context_commentstring = {
+		enable = true,
+		-- enable_autocmd = false,
+    disable = { "help"}
+	},
 })
