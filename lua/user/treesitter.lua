@@ -1,17 +1,9 @@
-local status_ok, treesitter = pcall(require, "nvim-treesitter")
-if not status_ok then
-	return
-end
-
-local status_ok, configs = pcall(require, "nvim-treesitter.configs")
-if not status_ok then
-	return
-end
+local configs = require("nvim-treesitter.configs")
 
 configs.setup({
-	ensure_installed = { "lua", "markdown", "markdown_inline", "bash", "python", "typescript", "tsx" }, -- put the language you want in this array
-	ignore_install = { "" }, -- List of parsers to ignore installing
-	sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
+	ensure_installed = { "lua", "markdown", "markdown_inline", "bash", "python", "typescript", "tsx" },
+	ignore_install = { "" },
+	sync_install = false,
 	incremental_selection = {
 		enable = true,
 		keymaps = {
@@ -22,8 +14,7 @@ configs.setup({
 		},
 	},
 	highlight = {
-		enable = true, -- false will disable the whole extension
-		-- disable = { "css", "typescript", "typescriptreact", "tsx", "lua"}, -- list of language that will be disabled
+		enable = true,
 	},
 	autopairs = {
 		enable = true,
@@ -31,10 +22,9 @@ configs.setup({
 	autotag = {
 		enable = true,
 	},
-	indent = { enable = true, disable = { "python", "css", "rust" } },
 	context_commentstring = {
 		enable = true,
-		-- enable_autocmd = false,
     disable = { "help"}
 	},
 })
+

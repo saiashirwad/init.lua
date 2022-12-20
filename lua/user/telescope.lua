@@ -26,7 +26,6 @@ end
 M.switch_colorschemes = function()
 	tb.colorscheme(themes.get_dropdown({
 		enable_preview = true,
-		previewer = false,
 	}))
 end
 

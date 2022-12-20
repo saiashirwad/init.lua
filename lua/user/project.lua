@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 project.setup({
-	detection_methods = { "pattern" }, -- NOTE: lsp detection will get annoying with multiple langs in one project
+	detection_methods = { "pattern" },
 	patterns = { ".git", "Makefile"  },
 })
 

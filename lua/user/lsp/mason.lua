@@ -11,7 +11,9 @@ local servers = {
 	"tailwindcss",
 	"eslint",
 	"ocamllsp",
-  "astro"
+  "astro",
+  "fsautocomplete",
+  "gopls"
 }
 
 local settings = {
